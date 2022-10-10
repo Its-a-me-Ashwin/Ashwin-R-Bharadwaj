@@ -1,0 +1,18 @@
+.project-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-height: 100%;
+}
+
+.fit-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-itemlist {
+    max-height: 100%;
+}
+
+.project-item-container {
+    max-height: 100%;
+}     
