@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <h2 id="header">
+                    Projects
+				</h2>
+
+				<!-- Nav -->
+                <nav id="nav">
+                    <ul class="links">
+						<li><a href="./index.html">Home</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li class="active"><a href="./tutorials.html"> Activities </a></li>
+                    </ul>
+                    <ul class="icons">
+						<li><a href="javascript:void(0);" id="copy_email" onclick="copyToClipboard()" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.github.com/Its-a-me-Ashwin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/ashwin-r-bharadwaj-709aaa193/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					</ul>
+                </nav>
+
+				<!-- Main -->
+					<div id="main">
+						<section class="posts">
+
+							<article>
+								<header>
+									<h2> Oversky MUL A Flight Controller </h2>
+									<span class="date"> Feb 2024 </span>
+								</header>
+								<img class="image fit" src="./images/FC_working.gif" alt="" />
+								<p style="font-size: small;"> 
+									Flight Controller (FC): Sold by HobbyKing at a very low price. The firmware initially loaded on the board is outdated, but I found a working NAZE 2.0 firmware that can be uploaded using Cleanflight Configurator v2.2. With this updated firmware, the FC performs well.
+                                    <br>
+                                    OSD Reprogramming: I haven’t yet figured out how to reprogram the onboard OSD; additional hardware may be required.
+                                    <br>
+                                    Power Distribution Board (PDB): Limited to handling a maximum of 10A, rendering it unsuitable for most drones.
+                                    <br>
+                                    Video Transmitter: Decent quality; compatible with 5.8GHz video receivers. It works well in my testing.
+                                    <br>
+                                    DSMX Receiver (7Ch): Not tested due to lack of a DSMX transmitter. The manufacturer made a design oversight: installing the receiver requires sharply bending the antennas, potentially exceeding their minimum bending radius and leading to premature failure. This could have been addressed with inexpensive stand-offs or longer connectors.
+								</p>
+							</article>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
