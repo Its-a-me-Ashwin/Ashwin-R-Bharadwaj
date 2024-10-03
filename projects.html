@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Projects</title>
 		<meta charset="utf-8" />
@@ -10,171 +10,200 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-                <h2 id="header">
-                    Projects
-				</h2>
+		<div id="wrapper">
+			<h2 id="header">Projects</h2>
 
-				<!-- Nav -->
-                <nav id="nav">
-                    <ul class="links">
-						<li><a href="./index.html">Home</a></li>
-                        <li class="active"><a href="./projects.html">Projects</a></li>
-                        <li><a href="./tutorials.html"> Activities </a></li>
-                    </ul>
-                    <ul class="icons">
-						<li><a href="javascript:void(0);" id="copy_email" onclick="copyToClipboard()" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.github.com/Its-a-me-Ashwin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/ashwin-r-bharadwaj-709aaa193/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-					</ul>
-                </nav>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="./index.html">Home</a></li>
+					<li class="active"><a href="./projects.html">Projects</a></li>
+					<li><a href="./tutorials.html"> Activities </a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="javascript:void(0);" id="copy_email" onclick="copyToClipboard()" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://www.github.com/Its-a-me-Ashwin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/ashwin-r-bharadwaj-709aaa193/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<section class="posts">
+			<!-- Main -->
+			<div id="main">
+				<section class="posts">
 
+					<!-- Universall Mobile Robot -->
+					<article>
+						<header>
+							<h2>Universall Mobile Robot</h2>
+							<span class="date">Sept 2024</span>
+						</header>
+						<div class="scroll-container">
+							<div class="slider">
+								<img class="slide" src="./images/uniRob2.jpeg" alt="Image 1" />
+								<img class="slide" src="./images/uniRob1.jpeg" alt="Image 2" />
+								<img class="slide" src="./images/uniRob3.jpeg" alt="Image 3" />
+							</div>
+						</div>
+						<p>
+							Designed and built a cost-effective mobile robot for research purposes. The main objective was to create a stable robot capable of carrying up to 100Kg while moving at 2m/s on a 10-degree incline. This was achieved using two powerful 350W motors and a sturdy frame that can be fabricated using high-density wood or aluminum.
+						</p>
+						<p>I plan to use this robot base for future navigation and HRI-related projects.</p>
+						<a href="https://github.com/Its-a-me-Ashwin/UniBot" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+						<a href="https://cad.onshape.com/documents/883918eb14141cee93e4a842/w/890805df5616e18eef3ec22b/e/0f4eb4b35d5dc32b6a94edff?renderMode=0&uiState=66fe9bfe51772e3810e18404" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> WaltZ (Bipedal walking robot) </h2>
-									<span class="date"> March 2024 - Current </span>
-								</header>
-								<div class="scroll-container">
-									<img class="image fit" src="./images/SnoopyEarly.jpeg" alt="" />
-									<img class="image fit" src="./images/SnoopyMid.jpeg" alt="" />
-								</div>
-								<p> 
-									This is the main project undertaken at the Khoury Robotics Club. 
-									The purpose of the porject is to develop a low cost walking bipedal robot. The robot has 6 DoF. 
-									It is controlled by a RP2040 micro controller with an integrated 9 axis IMU.
-									This project is in development and is expected to be used as an education tool in the coming undergraduate classes.
-								</p>
-								<a href="https://github.com/Khoury-Robotics-Club/WaltZ" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-							</article>
+					<!-- WaltZ (Bipedal Walking Robot) -->
+					<article>
+						<header>
+							<h2>WaltZ (Bipedal Walking Robot)</h2>
+							<span class="date">March 2024 - Current</span>
+						</header>
+						<div class="scroll-container">
+							<div class="slider">
+								<img class="slide" src="./images/SnoopyEarly.jpeg" alt="Image 1" />
+								<img class="slide" src="./images/SnoopyMid.jpeg" alt="Image 2" />
+							</div>
+						</div>
+						<p>
+							This is a key project undertaken by the Khoury Robotics Club. The purpose of the project is to develop a cost-effective bipedal walking robot with 6 degrees of freedom (DoF), controlled by an RP2040 microcontroller integrated with a 9-axis IMU. This project is in development and will serve as an educational tool in undergraduate classes.
+						</p>
+						<a href="https://github.com/Khoury-Robotics-Club/WaltZ" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> Spatially Handeling Arm Projectile EvadeR (SHAPER) </h2>
-									<span class="date"> Nov 2023 - Dec 2023 </span>
-								</header>
-								<a href="https://youtu.be/7NI3Hp3TcV8">
-								<img class="image fit" src="./images/shaper.jpg" alt="" />
-								</a>
-								<p> 
-									Genetic Algortihm used to train a simulated robot arm to evade flying objects. This entire project was written using numpy and pygame
-									without using any exsisting libraries. The algorith used a new multistep scoring function that incrementally increases the complexity of the 
-									target function needed to be learnt by the robot arms. This appraoch significantly imporved training time compared to traditional genetic algorithms.
-								</p>
-								<a href="https://github.com/Its-a-me-Ashwin/SHAPER" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-								<a href="https://github.com/Its-a-me-Ashwin/SHAPER/blob/main/Report.pdf" class="icon fa-file-pdf"><span class="label">Paper</span></a>
-							</article>
+					<!-- SHAPER -->
+					<article>
+						<header>
+							<h2>Spatially Handling Arm Projectile Evader (SHAPER)</h2>
+							<span class="date">Nov 2023 - Dec 2023</span>
+						</header>
+						<a href="https://youtu.be/7NI3Hp3TcV8">
+							<img class="image fit" src="./images/shaper.jpg" alt="SHAPER Video" />
+						</a>
+						<p>
+							A genetic algorithm was employed to train a simulated robot arm to evade flying objects. The entire project was written using only NumPy and Pygame, without external libraries. The algorithm uses a novel multi-step scoring function that gradually increases the complexity of the target function the robot arms must learn. This method significantly improved training time compared to traditional genetic algorithms.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/SHAPER" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+						<a href="https://github.com/Its-a-me-Ashwin/SHAPER/blob/main/Report.pdf" class="icon fa-file-pdf"><span class="label">Paper</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> MBTA Bus tracker </h2>
-									<span class="date"> January 2024 - Current </span>
-								</header>
-								<a href="https://its-a-me-ashwin.github.io/MBTA-Tracker/">
-								<img class="image fit" src="./images/MBTADemo.png" alt="" />
-								</a>
-								<p> This website serves as a comprehensive platform for tracking the MBTA-operated buses. Users can conveniently access real-time information about bus routes and monitor the precise locations of the buses. This resource is designed to enhance efficiency and provide valuable insights for transit management </p>
-								<p> This website serves as a comprehensive platform for tracking the MBTA-operated buses. Users can conveniently access real-time information about bus routes and monitor the precise locations of the buses. This resource is designed to enhance efficiency and provide valuable insights for transit management </p>
-								<a href="https://github.com/Its-a-me-Ashwin/MBTA-Tracker" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-							</article>
+					<!-- MBTA Bus Tracker -->
+					<article>
+						<header>
+							<h2>MBTA Bus Tracker</h2>
+							<span class="date">January 2024 - Current</span>
+						</header>
+						<a href="https://its-a-me-ashwin.github.io/MBTA-Tracker/">
+							<img class="image fit" src="./images/MBTADemo.png" alt="MBTA Bus Tracker Demo" />
+						</a>
+						<p>
+							This website serves as a comprehensive platform for tracking MBTA-operated buses. Users can conveniently access real-time information about bus routes and monitor the precise locations of the buses. This resource enhances efficiency and provides valuable insights for transit management.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/MBTA-Tracker" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> 2D TO 3D </h2>
-									<span class="date"> January 2021 - March 2021 </span>
-								</header>
-								<img class="image fit" src="./images/pic02.jpg" alt="" />
-								<p>
-									This was my final year project during my undergraduate course. The aim was to convert images taken by ordinary cameras to 3D point clouds. The project explores two different approaches: Stereoscopy and Machine learning.
-								</p>
-								<a href="https://www.github.com/Its-a-me-Ashwin/" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-								<a href="./assets/projects/2Dto3D/" class="icon fa-file-pdf"><span class="label">Project Link</span></a>
-							</article>
+					<!-- 2D TO 3D -->
+					<article>
+						<header>
+							<h2>2D to 3D</h2>
+							<span class="date">January 2021 - March 2021</span>
+						</header>
+						<img class="image fit" src="./images/pic02.jpg" alt="2D to 3D Project" />
+						<p>
+							This final-year undergraduate project aimed to convert 2D images from standard cameras into 3D point clouds. Two approaches were explored: stereoscopy and machine learning.
+						</p>
+						<a href="https://www.github.com/Its-a-me-Ashwin/" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+						<a href="./assets/projects/2Dto3D/" class="icon fa-file-pdf"><span class="label">Project Link</span></a>
+					</article>
 
+					<!-- Mars Helicopter -->
+					<article>
+						<header>
+							<h2>Mars Helicopter</h2>
+							<span class="date">October 2020 - December 2020</span>
+						</header>
+						<img class="image fit" src="./images/heli.jpg" alt="Mars Helicopter Project" />
+						<p>
+							Designed and 3D printed a small version of the Mars helicopter with counter-rotating propellers. The design has some stability issues, as it is highly sensitive to the center of gravity (CG) of the craft.
+						</p>
+					</article>
 
-							<article>
-								<header>
-									<h2> Mars Helicopter </h2>
-									<span class="date"> October 2020 - December 2020 </span>
-								</header>
-								<img class="image fit" src="./images/heli.jpg" alt="" />
-								<p>
-									Designed and 3D printed a small version of the Mars helicopter with counter rotating propellers. 
-									It has a few issues with related to stability, namely it is very sensitive to  CG of the entire craft.
-								</p>
-							</article>
+					<!-- Frame Rate Doubling -->
+					<article>
+						<header>
+							<h2>Frame Rate Doubling</h2>
+							<span class="date">January 2020 - March 2020</span>
+						</header>
+						<p>
+							This project, developed during a hackathon, aimed to double the frame rate of a video using generative adversarial networks (GANs) and interpolation. It explored the benefits of storing and transmitting videos at half the frame rate while relying on the receiver to render the missing frames.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/Frame-Rate-Boosting" class="icon brands alt fa-github"><span class="label">Project Linkthe frame rate of a video using generative adversarial networks (GANs) and interpolation. It explored the benefits of storing and transmitting videos at half the frame rate while relying on the receiver to render the missing frames.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/Frame-Rate-Boosting" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+						<a href="./assets/projects/frame-rate-boosting/Paper.pdf" class="icon fa-file-pdf"><span class="label">Project Link</span></a>
+					</article>
 
+					<!-- Algorithms for Information Retrieval -->
+					<article>
+						<header>
+							<h2>Algorithms for Information Retrieval</h2>
+							<span class="date">January 2020 - March 2020</span>
+						</header>
+						<p>
+							This project involved developing a trie-based inverted index algorithm for searching large text-based data sets. The project also compared the accuracy and efficiency of this model to that of Elastic Search.
+						</p>
+						<a href="https://github.com/kaybee1928/Trie-Based-Inverted-Index-for-Search-Engine" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> Frame Rate Doubling </h2>
-									<span class="date"> January 2020 - March 2020 </span>
-								</header>
-								<p> 
-									Project developed at a hackathon to double the frame rate of a video using Generative adversarial networks and interpolation. Compares the advantages of storing and transmitting video files at half the frame rate while relying on the receiver to render the missing frames.
-								</p>
-								<a href="https://github.com/Its-a-me-Ashwin/Frame-Rate-Boosting" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-								<a href="./assets/projects/frame-rate-boosting/Paper.pdf" class="icon fa-file-pdf"><span class="label">Project Link</span></a>
-							</article>
+					<!-- KTG Simulation -->
+					<article>
+						<header>
+							<h2>KTG Simulation</h2>
+							<span class="date">July 2022 - Present</span>
+						</header>
+						<img class="image fit" src="./images/pic02.jpg" alt="KTG Simulation" />
+						<p>
+							A simple model to simulate particles in a box, visually depicting the Kinetic Theory of Gases. The project explores different algorithms used to detect and resolve collisions within the simulation.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/Particle_Sim_2D" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> Algorithms for information retrival </h2>
-									<span class="date"> January 2020 - March 2020 </span>
-								</header>
-								<p> 
-									A trie-based inverted index algorithm for searching large text-based data points. The project also compares the accuracy and the time efficiency of the developed model to that of Elastic search.
-								</p>
-								<a href="https://github.com/kaybee1928/Trie-Based-Inverted-Index-for-Search-Engine" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-							</article>
+					<!-- Training Neural Networks using Genetic Algorithm -->
+					<article>
+						<header>
+							<h2>Training Neural Networks using Genetic Algorithm</h2>
+							<span class="date">September 2019</span>
+						</header>
+						<p>
+							This project involved implementing a generic approach to training neural networks using genetic algorithms combined with simulated annealing, primarily for classification problems.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/Genetic_Classifier" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+						<a href="./assets/projects/genetic-algo/AI_report.pdf" class="icon fa-file-pdf"><span class="label">Paper</span></a>
+					</article>
 
-							<article>
-								<header>
-									<h2> KTG simulation </h2>
-									<span class="date"> July 2022 - Prsent</span>
-								</header>
-								<img class="image fit" src="./images/pic02.jpg" alt="" />
-								<p>
-									A simple model to simulate particles in a box. This model tries to visually depict the Kinetic theory of gasses through a simulation. The project also explores different algorithms used to detect and resolve collisions. 
-								</p>
-								<a href="https://github.com/Its-a-me-Ashwin/Particle_Sim_2D" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-							</article>
-
-							<article>
-								<header>
-									<h2> Training neural networks using genetic algorithm </h2>
-									<span class="date"> September 2019 </span>
-								</header>
-								<p> Generic implimentation to train simple neural networks using genetic algorithms with simulated annealing. Approach for clasification problems. </p>
-								<a href="https://github.com/Its-a-me-Ashwin/Genetic_Classifier" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-								<a href="./assets/projects/genetic-algo/AI_report.pdf" class="icon fa-file-pdf"><span class="label">Project Link</span></a>
-							</article>
-
-							<article>
-								<header>
-									<h2> Data Base as a Service (DBaaS)</h2>
-									<span class="date"> January 2020 - March 2020 </span>
-								</header>
-								<img class="image fit" src="./images/pic02.jpg" alt="" />
-								<p> An implimentation of a Database as a Service model with auto scale and fault tolerant system with MongoDB.   </p>
-								<a href="https://github.com/Its-a-me-Ashwin/DbaaS" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
-							</article>
-						</section>
-					</div>
+					<!-- Database as a Service (DBaaS) -->
+					<article>
+						<header>
+							<h2>Database as a Service (DBaaS)</h2>
+							<span class="date">January 2020 - March 2020</span>
+						</header>
+						<img class="image fit" src="./images/pic02.jpg" alt="DBaaS Project" />
+						<p>
+							An implementation of a Database as a Service (DBaaS) model, with auto-scaling and fault-tolerant capabilities, using MongoDB.
+						</p>
+						<a href="https://github.com/Its-a-me-Ashwin/DbaaS" class="icon brands alt fa-github"><span class="label">Project Link</span></a>
+					</article>
+				</section>
 			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

@@ -4733,3 +4733,36 @@ input, select, textarea {
 	div.scroll-container img {
 		padding: 10px;
 	}
+
+	.scroll-container {
+		width: 100%; /* Set the width as required */
+		height: 400px; /* Set the height as required */
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.slider {
+		width: 200%; /* Double the width because we have two images */
+		height: 100%;
+		display: flex;
+		animation: slide 6s infinite;
+	}
+	
+	.slide {
+		width: 50%; /* Each image takes half the width of the slider */
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	@keyframes slide {
+		0% {
+			transform: translateX(0%);
+		}
+		50% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(0%);
+		}
+	}
+	
