@@ -78,11 +78,24 @@ input, select, textarea {
 }
 
 .org-list {
-	text-align: center;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
 }
 
 .org-element{
 	display: inline-block;
+	text-align: center; /* Center content within each element */
+	margin: 20px 0; /* Add spacing between elements */
+	width: 100%; /* Ensure consistent alignment */
+}
+
+.org-img {
+	max-width: 100px; /* Limit the image size */
+	margin-bottom: 10px; /* Add spacing below the image */
+	display: block; /* Ensure proper spacing for the image */
+	margin-left: auto; /* Center the image horizontally */
+	margin-right: auto;
 }
 
 .left{
