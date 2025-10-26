@@ -587,16 +587,16 @@
 })(jQuery);
 
 function copyToClipboard() {
-	navigator.clipboard.writeText("ashwinrb7799@gmail.com");
+	navigator.clipboard.writeText("ashwin.b@protectmymails.com");
 	document.getElementById("copy_email").innerHTML = "Copied";
 }
 
 function copyToClipboard1() {
-	navigator.clipboard.writeText("ashwinrb7799@gmail.com");
+	navigator.clipboard.writeText("ashwin.b@protectmymails.com");
 	//document.getElementById("copy_email").innerHTML = "Copied";
 }
 
 function copyToClipboard2() {
-	navigator.clipboard.writeText("ashwinrb7799@gmail.com");
+	navigator.clipboard.writeText("ashwin.b@protectmymails.com");
 	document.getElementById("copy_email").class = "icon alt fa-envelope-open";
 }
