@@ -18,6 +18,7 @@
 				<ul class="links">
 					<li><a href="./index.html">Home</a></li>
 					<li class="active"><a href="./projects.html">Projects</a></li>
+					<li><a href="./hackathons.html">Hackathon Wins</a></li>
 					<li><a href="./tutorials.html">Activities</a></li>
 				</ul>
 				<ul class="icons">
@@ -40,133 +41,278 @@
 			</nav>
 
 			<!-- Main -->
-			<div id="main">
-				<section class="posts">
+			<div id="main" class="projects-page">
+				<section class="post">
+					<article class="project-entry">
+						<h2>🤖 trpy — Python Interface for Trossen Robotic Arms</h2>
+						<span class="hackathon-date">Feb 2025</span>
 
-					<article>
-						<a href="https://aaai.org/conference/aaai/aaai-25/hackathon/">
-							<header>
-								<h2>FakeXplainer AI (Winner of the AAAI 2025 Hackathon)</h2>
-								<span class="date">Feb 2025</span>
-							</header>
-							<img class="image fit" src="./images/fakeExplaner.png" alt="Mars Helicopter Project" />
-							<p>
-								TruthDetect AI is an innovative web application powered by a fine-tuned Large Language Model (LLM) designed to educate users on misinformation by generating both real and fake summaries of products, news, and historical events. The system explains the logical, statistical, and reasoning techniques it uses to craft fake summaries, helping users develop critical thinking skills to identify misinformation. 
-							</p>
-							<a href="https://github.com/AAAI-2025-Hackathon/team_110" class="icon brands alt fa-github">
-								<span class="label">Github</span>
-							</a>
-							<a href="https://youtu.be/7lxT85gBHzM" class="icon brands alt fa-youtube">
-								<span class="label">YouTube Link</span>
-							</a>
-							<a href="https://aaai-hackathon.onrender.com/" class="icon solid alt fa-external-link-alt">
-								<span class="label">Project Website</span>
-							</a>							
-						</a>
-					</article>
+						<p class="hackathon-field"><strong>Type:</strong> Open-source Robotics Library</p>
+						<p class="hackathon-field"><strong>Category:</strong> Robot Control / HRI / Prototyping</p>
 
-					<article>
+						<h3>Overview</h3>
+						<p>
+							Lightweight Python library for controlling Trossen robotic arms via CLI and scripts, designed for rapid experimentation without requiring full ROS2 setup.
+						</p>
+
+						<h3>Impact</h3>
+						<ul>
+							<li>Enabled faster prototyping for Human-Robot Interaction (HRI) research</li>
+							<li>Lowered barrier for students unfamiliar with ROS2</li>
+							<li>Supported multi-arm control in research workflows</li>
+						</ul>
+
+						<h3>Key Features</h3>
+						<ul>
+							<li>Record &amp; playback motion sequences</li>
+							<li>Auto-homing routines</li>
+							<li>Motion smoothing filters</li>
+							<li>Asynchronous control for multiple arms</li>
+						</ul>
+
+						<h3>My Contribution</h3>
+						<ul>
+							<li>Designed and implemented full library architecture</li>
+							<li>Built async control system for multi-arm setups</li>
+							<li>Integrated usability-focused CLI for rapid testing</li>
+						</ul>
+
+						<p class="hackathon-tech"><strong>Tech:</strong> Python, Robotics Control, Async Systems</p>
+
 						<a href="https://github.com/Its-a-me-Ashwin/trpy">
-							<header>
-								<h2>trpy: An open source library for controlling Trossen Robotic arms via a python interface</h2>
-								<span class="date">Feb 2025</span>
-							</header>
-							<img class="image fit" src="./images/trossen.jpg" alt="Mars Helicopter Project" />
-							<p>
-								This is an simple to use library that I developed to make it easier to interface with Trossen robtic arms. For fast prototyping it is easier to have an easy to use python interface that can control the robot arm via a CLI.
-								The library also includes record and play back featurea, an auto homing sequence and some smoothing filters. This library was used to quickly test out different control algortims for some HRI studies. Usin the native ROS 2 interface might 
-								be tricky as not all students are familirat with ROS 2 and python is good for quick and fast prototyping. Mosot of the calls in the library run asyncronously and work with multiple arms connected.  
-							</p>
-							<a href="https://github.com/Its-a-me-Ashwin/trpy" class="icon brands alt fa-github">
-								<span class="label">Github</span>
-							</a>
+							<img class="image fit" src="./images/trossen.jpg" alt="Trossen robotic arm used with trpy" />
 						</a>
+
+						<ul class="actions hackathon-actions">
+							<li><a href="https://github.com/Its-a-me-Ashwin/trpy" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></li>
+						</ul>
 					</article>
+				</section>
 
+				<section class="post">
+					<article class="project-entry">
+						<h2>🚗 Universal Mobile Robot Platform</h2>
+						<span class="hackathon-date">Dec 2024</span>
 
+						<p class="hackathon-field"><strong>Type:</strong> Robotics Platform / Applied AI System</p>
+						<p class="hackathon-field"><strong>Category:</strong> Mobile Robotics / HRI / Autonomous Systems</p>
 
-					<!-- Universall Mobile Robot -->
-					<article>
-						<a href="https://its-a-me-ashwin.github.io/UniBot/index.html">
-							<header>
-								<h2>Universall Mobile Robot</h2>
-								<span class="date">Dec 2024</span>
-							</header>
-							<div class="scroll-container">
-								<div class="slider">
-									<img class="slide" src="./images/uniRob2.jpeg" alt="Image 1" />
-									<img class="slide" src="./images/uniRob1.jpeg" alt="Image 2" />
-									<img class="slide" src="./images/uniRob3.jpeg" alt="Image 3" />
+						<h3>Overview</h3>
+						<p>
+							Built a cost-effective mobile robot platform capable of carrying heavy payloads and operating in real-world indoor environments for research and prototyping.
+						</p>
+
+						<h3>Impact</h3>
+						<ul>
+							<li>Designed for 100 kg payload capacity</li>
+							<li>Achieves ~2 m/s speed on a 10° incline</li>
+							<li>Currently being adapted for AI-driven autonomous tasks at Adobe Makerspace</li>
+						</ul>
+
+						<h3>Real-World Usage</h3>
+						<p>
+							Used internally at Adobe Makerspace to prototype AI-powered robotics workflows.
+						</p>
+						<ul>
+							<li>Being extended to integrate models like Claude for:
+								<ul>
+									<li>Autonomous navigation</li>
+									<li>Office assistance (guidance, task automation)</li>
+								</ul>
+							</li>
+						</ul>
+
+						<h3>My Contribution</h3>
+						<ul>
+							<li>Built the original robot platform (hardware + system design)</li>
+							<li>Provided architecture + codebase for further development</li>
+							<li>Enabled transition from research prototype → internal AI robotics platform</li>
+						</ul>
+
+						<h3>System Design</h3>
+						<ul>
+							<li>Dual 350W motors</li>
+							<li>High-strength frame (wood/aluminum variants)</li>
+							<li>Modular design for future autonomy upgrades</li>
+						</ul>
+
+						<h3>Collaboration Note</h3>
+						<p>
+							Initial follow-on development at Adobe was led by another engineer. I contributed the platform, architecture, and foundational system.
+						</p>
+
+						<div class="image-carousel" data-carousel>
+							<div class="image-carousel-viewport">
+								<div class="image-carousel-track">
+									<img class="image-carousel-slide" src="./images/uniRob2.jpeg" alt="Universal mobile robot platform — photo 1 of 3" />
+									<img class="image-carousel-slide" src="./images/uniRob1.jpeg" alt="Universal mobile robot platform — photo 2 of 3" />
+									<img class="image-carousel-slide" src="./images/uniRob3.jpeg" alt="Universal mobile robot platform — photo 3 of 3" />
 								</div>
 							</div>
-							<p>
-								Developed a robust, cost-effective mobile robot platform for research applications. Designed to carry up to 100 kg at speeds of 2 m/s on a 10-degree incline, it uses dual 350 W motors and a solid frame constructed from high-density wood or aluminum. Future iterations will focus on navigation and human-robot interaction (HRI).
-							</p>
-							<a href="https://github.com/Its-a-me-Ashwin/UniBot" class="icon brands alt fa-github">
-								<span class="label">Github</span>
-							</a>
-							<a href="https://its-a-me-ashwin.github.io/UniBot/index.html" class="icon brands alt fa-globe">
-								<span class="label">Project Link</span>
-							</a>
-						</a>
-					</article>
-
-					<!-- WaltZ (Bipedal Walking Robot) -->
-					<article>
-						<header>
-							<h2>WaltZ (Bipedal Walking Robot)</h2>
-							<span class="date">March 2024 - Current</span>
-						</header>
-						<div class="scroll-container">
-							<div class="slider">
-								<img class="slide" src="./images/SnoopyEarly.jpeg" alt="Image 1" />
-								<img class="slide" src="./images/SnoopyMid.jpeg" alt="Image 2" />
-							</div>
+							<button type="button" class="image-carousel-btn image-carousel-btn-prev" aria-label="Previous image">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</button>
+							<button type="button" class="image-carousel-btn image-carousel-btn-next" aria-label="Next image">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</button>
 						</div>
-						<p>
-							A flagship initiative by the Khoury Robotics Club, WaltZ is a 6-DoF bipedal robot driven by an RP2040 microcontroller and 9-axis IMU. Built to be affordable and easy to fabricate, this ongoing project will serve as an educational tool in robotics courses, showcasing core principles of gait, balance, and embedded control.
-						</p>
-						<a href="https://github.com/Khoury-Robotics-Club/WaltZ" class="icon brands alt fa-github">
-							<span class="label">Project Link</span>
-						</a>
-					</article>
 
-					<!-- SHAPER -->
-					<article>
-						<header>
-							<h2>Spatially Handling Arm Projectile Evader (SHAPER)</h2>
-							<span class="date">Nov 2023 - Dec 2023</span>
-						</header>
-						<a href="https://youtu.be/7NI3Hp3TcV8">
-							<img class="image fit" src="./images/shaper.jpg" alt="SHAPER Video" />
-						</a>
-						<p>
-							Used a custom genetic algorithm to train a simulated robotic arm to evade flying objects. Developed solely in NumPy and Pygame without external libraries, the project introduces a multi-stage scoring function that incrementally increases task difficulty, substantially speeding up training compared to traditional approaches.
-						</p>
-						<a href="https://github.com/Its-a-me-Ashwin/SHAPER" class="icon brands alt fa-github">
-							<span class="label">Project Link</span>
-						</a>
-						<a href="https://github.com/Its-a-me-Ashwin/SHAPER/blob/main/Report.pdf" class="icon fa-file-pdf">
-							<span class="label">Paper</span>
-						</a>
+						<ul class="actions hackathon-actions">
+							<li><a href="https://github.com/Its-a-me-Ashwin/UniBot" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></li>
+							<li><a href="https://its-a-me-ashwin.github.io/UniBot/index.html" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 Project site</a></li>
+						</ul>
 					</article>
+				</section>
 
-					<!-- MBTA Bus Tracker -->
-					<article>
-						<header>
-							<h2>MBTA Bus Tracker</h2>
-							<span class="date">January 2024 - Current</span>
-						</header>
-						<a href="https://its-a-me-ashwin.github.io/MBTA-Tracker/">
-							<img class="image fit" src="./images/MBTADemo.png" alt="MBTA Bus Tracker Demo" />
-						</a>
+				<section class="post">
+					<article class="project-entry">
+						<h2>🦿 WaltZ — Bipedal Walking Robot</h2>
+						<span class="hackathon-date">July 2024 – Current</span>
+
+						<p class="hackathon-field"><strong>Type:</strong> University Robotics Club / Education Platform</p>
+						<p class="hackathon-field"><strong>Category:</strong> Bipedal Locomotion / Embedded Control / HRI Teaching</p>
+
+						<h3>Overview</h3>
 						<p>
-							A web-based platform for real-time tracking of MBTA-operated buses. Offers intuitive route-based visualization and dynamic location updates, providing valuable insights for transit management and daily commuting.
+							A flagship initiative by the Khoury Robotics Club, WaltZ is a 6-DoF bipedal robot driven by an RP2040 microcontroller and 9-axis IMU. Built to be affordable and easy to fabricate, this ongoing project serves as an educational tool in robotics courses, showcasing core principles of gait, balance, and embedded control.
 						</p>
-						<a href="https://github.com/Its-a-me-Ashwin/MBTA-Tracker" class="icon brands alt fa-github">
-							<span class="label">Project Link</span>
-						</a>
+
+						<h3>Impact</h3>
+						<ul>
+							<li>Low-cost, fabricable platform lowers the barrier to hands-on bipedal robotics</li>
+							<li>Designed for use in coursework on gait, balance, and real-time control</li>
+							<li>Ongoing build—intended to grow with future navigation and HRI modules</li>
+						</ul>
+
+						<h3>Key Features</h3>
+						<ul>
+							<li>6-DoF leg architecture</li>
+							<li>RP2040-based embedded control</li>
+							<li>9-axis IMU for orientation and balance experiments</li>
+						</ul>
+
+						<h3>Context</h3>
+						<p>
+							Developed within the Khoury Robotics Club as a shared club initiative; I contribute to mechanical integration, embedded software, and documentation alongside other members.
+						</p>
+
+						<p class="hackathon-tech"><strong>Tech:</strong> RP2040, Embedded C/C++, IMU, CAD &amp; fabrication</p>
+
+						<div class="image-carousel" data-carousel>
+							<div class="image-carousel-viewport">
+								<div class="image-carousel-track">
+									<img class="image-carousel-slide" src="./images/SnoopyEarly.jpeg" alt="WaltZ bipedal robot — early build" />
+									<img class="image-carousel-slide" src="./images/SnoopyMid.jpeg" alt="WaltZ bipedal robot — mid build" />
+								</div>
+							</div>
+							<button type="button" class="image-carousel-btn image-carousel-btn-prev" aria-label="Previous image">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</button>
+							<button type="button" class="image-carousel-btn image-carousel-btn-next" aria-label="Next image">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</button>
+						</div>
+
+						<ul class="actions hackathon-actions">
+							<li><a href="https://github.com/Khoury-Robotics-Club/WaltZ" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></li>
+						</ul>
 					</article>
+				</section>
+
+				<section class="post">
+					<article class="project-entry">
+						<h2>🎯 SHAPER — Spatially Handling Arm Projectile Evader</h2>
+						<span class="hackathon-date">Nov 2023 – Dec 2023</span>
+
+						<p class="hackathon-field"><strong>Type:</strong> Simulation / Research Project</p>
+						<p class="hackathon-field"><strong>Category:</strong> Evolutionary Algorithms / Robotics Simulation</p>
+
+						<h3>Overview</h3>
+						<p>
+							A simulated robotic arm learns to evade incoming projectiles using a custom genetic algorithm. The entire stack is built with NumPy and Pygame only—no external ML frameworks—so the focus stays on algorithm design and efficient training dynamics.
+						</p>
+
+						<h3>Impact</h3>
+						<ul>
+							<li>Multi-stage scoring gradually increases difficulty, substantially speeding up convergence versus naive training</li>
+							<li>Demonstrates staged curriculum learning without deep learning dependencies</li>
+							<li>Reproducible, lightweight codebase suitable for coursework and experimentation</li>
+						</ul>
+
+						<h3>Key Features</h3>
+						<ul>
+							<li>Custom genetic algorithm for policy search</li>
+							<li>Multi-stage scoring function with incremental task difficulty</li>
+							<li>2D simulation with NumPy + Pygame only</li>
+						</ul>
+
+						<h3>My Contribution</h3>
+						<ul>
+							<li>Designed and implemented the full simulation and training pipeline</li>
+							<li>Authored the technical report documenting methodology and results</li>
+						</ul>
+
+						<p class="hackathon-tech"><strong>Tech:</strong> Python, NumPy, Pygame</p>
+
+						<a href="https://youtu.be/7NI3Hp3TcV8" target="_blank" rel="noopener noreferrer">
+							<img class="image fit" src="./images/shaper.jpg" alt="SHAPER — simulated arm evading projectiles (opens demo video)" />
+						</a>
+
+						<ul class="actions hackathon-actions">
+							<li><a href="https://github.com/Its-a-me-Ashwin/SHAPER" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></li>
+							<li><a href="https://youtu.be/7NI3Hp3TcV8" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 Video</a></li>
+							<li><a href="https://github.com/Its-a-me-Ashwin/SHAPER/blob/main/Report.pdf" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 Report (PDF)</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="post">
+					<article class="project-entry">
+						<h2>🚌 MBTA Bus Tracker</h2>
+						<span class="hackathon-date">January 2024 – Current</span>
+
+						<p class="hackathon-field"><strong>Type:</strong> Web Application</p>
+						<p class="hackathon-field"><strong>Category:</strong> Transit / Real-time Data / Maps</p>
+
+						<h3>Overview</h3>
+						<p>
+							A web-based platform for real-time tracking of MBTA-operated buses. It emphasizes route-based visualization and live vehicle positions so riders and planners can see what is on the road without digging through raw feeds.
+						</p>
+
+						<h3>Impact</h3>
+						<ul>
+							<li>Makes MBTA bus activity easier to interpret for daily commuting decisions</li>
+							<li>Supports route-level situational awareness for transit management and enthusiasts</li>
+							<li>Continuously updated as APIs and routes evolve</li>
+						</ul>
+
+						<h3>Key Features</h3>
+						<ul>
+							<li>Route-centric map and list views</li>
+							<li>Dynamic location updates from MBTA real-time data</li>
+							<li>Responsive layout for desktop and mobile browsers</li>
+						</ul>
+
+						<h3>My Contribution</h3>
+						<ul>
+							<li>End-to-end product: UX, frontend implementation, and deployment</li>
+							<li>Integration with MBTA APIs and ongoing maintenance</li>
+						</ul>
+
+						<p class="hackathon-tech"><strong>Tech:</strong> Web stack, MBTA real-time APIs, mapping &amp; visualization</p>
+
+						<a href="https://its-a-me-ashwin.github.io/MBTA-Tracker/" target="_blank" rel="noopener noreferrer">
+							<img class="image fit" src="./images/MBTADemo.png" alt="MBTA Bus Tracker — live map and route view" />
+						</a>
+
+						<ul class="actions hackathon-actions">
+							<li><a href="https://its-a-me-ashwin.github.io/MBTA-Tracker/" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 Live demo</a></li>
+							<li><a href="https://github.com/Its-a-me-Ashwin/MBTA-Tracker" class="button primary small" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="posts">
 
 					<!-- 2D TO 3D -->
 					<article>

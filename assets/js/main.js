@@ -256,3 +256,95 @@
 		}
 
 })(jQuery);
+
+/**
+ * Image carousels: prev/next arrows, transform-based (projects.html).
+ */
+(function () {
+	function initCarousel(carousel) {
+		var viewport = carousel.querySelector('.image-carousel-viewport');
+		var track = carousel.querySelector('.image-carousel-track');
+		var slides = carousel.querySelectorAll('.image-carousel-slide');
+		var prev = carousel.querySelector('.image-carousel-btn-prev');
+		var next = carousel.querySelector('.image-carousel-btn-next');
+		if (!viewport || !track || slides.length === 0) {
+			return;
+		}
+
+		var index = 0;
+		var n = slides.length;
+
+		function layout() {
+			var w = viewport.offsetWidth;
+			if (w <= 0) {
+				return;
+			}
+			var i;
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.width = w + 'px';
+			}
+			track.style.width = (w * n) + 'px';
+			go(index, true);
+		}
+
+		function go(newIndex, instant) {
+			index = ((newIndex % n) + n) % n;
+			var w = viewport.offsetWidth;
+			if (w <= 0) {
+				return;
+			}
+			if (instant) {
+				track.style.transition = 'none';
+			} else {
+				track.style.transition = '';
+			}
+			track.style.transform = 'translate3d(' + (-index * w) + 'px,0,0)';
+			if (instant) {
+				track.offsetHeight;
+				track.style.transition = '';
+			}
+		}
+
+		if (prev) {
+			prev.addEventListener('click', function () {
+				go(index - 1, false);
+			});
+		}
+		if (next) {
+			next.addEventListener('click', function () {
+				go(index + 1, false);
+			});
+		}
+
+		carousel.setAttribute('tabindex', '0');
+		carousel.addEventListener('keydown', function (e) {
+			if (e.key === 'ArrowLeft') {
+				go(index - 1, false);
+				e.preventDefault();
+			} else if (e.key === 'ArrowRight') {
+				go(index + 1, false);
+				e.preventDefault();
+			}
+		});
+
+		window.addEventListener('resize', layout);
+
+		window.addEventListener('load', layout);
+
+		layout();
+	}
+
+	function initAll() {
+		var carousels = document.querySelectorAll('.image-carousel[data-carousel]');
+		var i;
+		for (i = 0; i < carousels.length; i++) {
+			initCarousel(carousels[i]);
+		}
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initAll);
+	} else {
+		initAll();
+	}
+})();
